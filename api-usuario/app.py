@@ -12,9 +12,9 @@ CORS(app, resources={
     }
 })
 
-app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_HOST'] = 'thomas.proxy.rlwy.net'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'Archuleta23'
+app.config['MYSQL_PASSWORD'] = 'EOWnmOEcgNMllNmeIvDgpiXqcgKBGWLj'
 app.config['MYSQL_DB'] = 'VENTAS'
 
 db = ConexionDB(

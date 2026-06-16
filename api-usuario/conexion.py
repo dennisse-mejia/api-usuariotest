@@ -7,6 +7,7 @@ class ConexionDB:
         self.password = password
         self.db = db
         self.conexion = None
+        self.port = 52528
 
     def conectar(self):
         if self.conexion is None or not self.conexion.open:
@@ -15,7 +16,8 @@ class ConexionDB:
                 user=self.user,
                 password=self.password,
                 db=self.db,
-                cursorclass=pymysql.cursors.Cursor
+                cursorclass=pymysql.cursors.Cursor,
+                port=self.port
             )
         return self.conexion
 
